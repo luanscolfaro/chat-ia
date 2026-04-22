@@ -13,7 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-GROQ_KEY = "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"
+GROQ_KEY = "COLE_SUA_CHAVE_GROQ"
 
 class Texto(BaseModel):
     mensagem: str
