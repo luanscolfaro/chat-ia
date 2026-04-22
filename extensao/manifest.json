@@ -1,19 +1,22 @@
 {
-    "manifest_version": 3,
-    "name": "Chat IA Assistente",
-    "version": "1.0",
-    "description": "Melhora textos em qualquer chat",
-    "permissions": ["activeTab", "storage"],
-    "host_permissions": ["<all_urls>"],
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"],
-        "css": ["style.css"],
-        "run_at": "document_idle"
-      }
-    ]
-  }
+  "manifest_version": 3,
+  "name": "Chat IA Assistente",
+  "version": "1.0",
+  "description": "Melhora textos em qualquer chat",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "<all_urls>",
+    "https://chat-ia-kpas.onrender.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
