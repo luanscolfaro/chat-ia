@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://chat-ia.onrender.com/melhorar";
+const BACKEND_URL = "https://chat-ia-kpas.onrender.com/melhorar";
 
 function criarBotao(campo) {
     if (campo.dataset.iaAtivo) return;
